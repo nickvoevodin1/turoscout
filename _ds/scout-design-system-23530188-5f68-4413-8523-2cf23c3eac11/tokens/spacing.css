@@ -1,0 +1,45 @@
+/* Scout — Spacing & layout tokens
+ * A calm 4px-based rhythm with generous vertical spacing between editorial
+ * sections. The reading layout is a fixed table-of-contents column beside a
+ * constrained measure of text. */
+:root {
+  /* --- Spacing scale (4px base) --- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  32px;
+  --space-8:  40px;
+  --space-9:  56px;
+  --space-10: 72px;
+  --space-11: 96px;
+  --space-12: 128px;
+
+  /* --- Semantic spacing --- */
+  --gap-inline:    var(--space-3);   /* between inline chips            */
+  --gap-stack:     var(--space-4);   /* between stacked blocks          */
+  --pad-card:      var(--space-6);   /* card interior padding           */
+  --pad-callout:   var(--space-7);   /* callout / quote box padding     */
+  --section-gap:   var(--space-11);  /* between article sections        */
+
+  /* --- Layout --- */
+  --measure:        720px;   /* max text measure for readability        */
+  --content-max:    880px;   /* content column width                    */
+  --toc-width:      210px;   /* sidebar table-of-contents width          */
+  --shell-max:      1240px;  /* page shell max width                     */
+  --gutter:         48px;    /* space between TOC and content            */
+  --page-pad-x:     40px;    /* horizontal page padding                  */
+  --header-h:       76px;    /* top bar height                           */
+
+  /* --- Radii (nearly square, editorial) --- */
+  --radius-xs:  2px;
+  --radius-sm:  3px;   /* cards, inputs, selector boxes                  */
+  --radius-md:  5px;
+  --radius-pill: 999px;/* pills, badges, slider thumb                    */
+
+  /* --- Border widths --- */
+  --bw-hair:  1px;     /* hairline borders / dividers                    */
+  --bw-bar:   3px;     /* callout / active-nav accent bar                */
+}

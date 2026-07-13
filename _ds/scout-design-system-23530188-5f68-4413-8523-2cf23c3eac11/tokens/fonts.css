@@ -1,0 +1,14 @@
+/* Scout — Font faces
+ * Two serifs, both with full Cyrillic and oldstyle (text) figures:
+ *   • Playfair Display — high-contrast Didone for the hero, section headings
+ *     and large figures (matches "Decagon AI", "9,5", "2023" in the specimen).
+ *   • Lora — a bracketed book serif for running text, card titles, nav, labels
+ *     and numerals in body.
+ *
+ * SUBSTITUTION NOTE: the original webfont files were not provided, only
+ * screenshots. These two Google Fonts are the closest matches to the two
+ * weights of serif visible in the specimen. If you have the real font files,
+ * drop them in assets/fonts/ and replace the @import below with local
+ * @font-face rules. */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');

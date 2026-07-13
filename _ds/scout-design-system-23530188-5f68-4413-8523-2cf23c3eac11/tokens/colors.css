@@ -1,0 +1,62 @@
+/* Scout — Color tokens
+ * Warm-paper editorial palette: near-black ink on a warm light-gray page,
+ * with a single amber/ochre accent used sparingly for emphasis. */
+:root {
+  /* --- Base neutrals (warm gray "paper") --- */
+  --paper-0:  #ffffff; /* pure white — card / logo surfaces           */
+  --paper-1:  #f7f5f1; /* faint warm off-white                        */
+  --paper-2:  #edebe6; /* PAGE background — warm light gray            */
+  --paper-3:  #e7e3dc; /* muted callout / quote box                   */
+  --paper-4:  #ddd8ce; /* stronger fill                               */
+
+  /* --- Ink (warm near-black text) --- */
+  --ink-0:    #1b1a17; /* headings, primary text                      */
+  --ink-1:    #33312c; /* body copy                                   */
+  --ink-2:    #6f6a5f; /* secondary text                              */
+  --ink-3:    #8f8a7d; /* muted eyebrow labels (uppercase)            */
+  --ink-4:    #b6b0a3; /* faint — inactive numbers, hairline labels   */
+
+  /* --- Accent (amber / ochre gold) --- */
+  --gold-0:   #b57d2a; /* PRIMARY accent — active nav, numbers, links */
+  --gold-1:   #9c6a24; /* deeper gold — text on cream                 */
+  --gold-2:   #c79a4d; /* lighter gold — hairline accents             */
+  --cream-0:  #f4e8d3; /* pill / badge / active-selector background   */
+  --cream-1:  #ece0c8; /* cream border                                */
+
+  /* --- Lines & borders (warm gray hairlines) --- */
+  --line-0:   #e0dbd1; /* default hairline — dividers, card borders   */
+  --line-1:   #d0cabd; /* stronger border                             */
+  --line-2:   #c4bdae; /* strongest / focus border                    */
+
+  /* --- Fixed --- */
+  --black:    #000000; /* slider track, rare full-black fills         */
+
+  /* ============ SEMANTIC ALIASES ============ */
+  --bg-page:       var(--paper-2);
+  --bg-surface:    var(--paper-0);
+  --bg-subtle:     var(--paper-1);
+  --bg-muted:      var(--paper-3);
+  --bg-cream:      var(--cream-0);
+
+  --text-heading:  var(--ink-0);
+  --text-body:     var(--ink-1);
+  --text-secondary:var(--ink-2);
+  --text-label:    var(--ink-3);
+  --text-faint:    var(--ink-4);
+  --text-accent:   var(--gold-0);
+  --text-on-cream: var(--gold-1);
+
+  --accent:        var(--gold-0);
+  --accent-deep:   var(--gold-1);
+  --accent-light:  var(--gold-2);
+
+  --border:        var(--line-0);
+  --border-strong: var(--line-1);
+  --border-focus:  var(--line-2);
+
+  --link:          var(--gold-0);
+  --link-hover:    var(--gold-1);
+
+  --rule:          var(--line-0);      /* section divider hairlines   */
+  --quote-bar:     var(--gold-0);      /* callout / blockquote bar     */
+}

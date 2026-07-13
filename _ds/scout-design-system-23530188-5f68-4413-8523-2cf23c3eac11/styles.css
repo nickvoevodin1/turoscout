@@ -1,0 +1,17 @@
+/* ============================================================
+ *  SCOUT — Design System · global stylesheet entry point
+ *  Consumers link THIS one file. It only @imports the token and
+ *  base layers; add new token files here as the system grows.
+ * ============================================================ */
+
+/* Fonts first (declares the webfont) */
+@import url("tokens/fonts.css");
+
+/* Design tokens */
+@import url("tokens/colors.css");
+@import url("tokens/typography.css");
+@import url("tokens/spacing.css");
+@import url("tokens/effects.css");
+
+/* Base element styling */
+@import url("tokens/base.css");

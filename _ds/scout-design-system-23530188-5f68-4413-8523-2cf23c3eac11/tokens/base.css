@@ -1,0 +1,80 @@
+/* Scout — Base element styles
+ * Sensible defaults so raw HTML already reads as "Scout". Kept light:
+ * these set the paper, the serif, link colors, and editorial rhythm. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg-page);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: var(--fw-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "onum" 1, "kern" 1;  /* oldstyle numerals */
+}
+
+/* --- Headings --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  margin: 0 0 0.4em;
+  letter-spacing: var(--ls-tight);
+}
+h1 { font-size: var(--fs-h1); line-height: var(--lh-tight); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); font-weight: var(--fw-semibold); letter-spacing: 0; font-family: var(--font-serif); }
+
+/* --- Text --- */
+p { margin: 0 0 1em; max-width: var(--measure); }
+p:last-child { margin-bottom: 0; }
+
+strong, b { font-weight: var(--fw-bold); color: var(--text-heading); }
+em, i { font-style: italic; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--link) 32%, transparent);
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+/* --- Rules --- */
+hr {
+  border: 0;
+  border-top: var(--bw-hair) solid var(--rule);
+  margin: var(--space-9) 0;
+}
+
+/* --- Lists --- */
+ul, ol { margin: 0 0 1em; padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+
+/* --- Small / labels --- */
+small { font-size: var(--fs-small); color: var(--text-secondary); }
+
+/* --- Media --- */
+img, svg, video { max-width: 100%; display: block; }
+
+/* --- Focus --- */
+:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* --- Eyebrow utility (used widely across the brand) --- */
+.scout-eyebrow {
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-label);
+  font-weight: var(--fw-medium);
+}
